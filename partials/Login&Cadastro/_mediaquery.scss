@@ -1,0 +1,29 @@
+/* Responsividade */
+@media (max-width: 768px) {
+
+    body{
+        background-color: var(--color-text-secondary);
+        background-image: none;
+    }
+
+    .background1 {
+        height: fit-content;
+    }
+    
+    .background2 {
+        height: fit-content;
+    }
+
+    .titulo-principal h1, .titulo-principal span{
+        font-size: 2rem;
+        text-align: center
+    }
+    
+    .background2 form {
+        padding: 2px; 
+      }
+
+    .background2 .container {
+        max-width: 95%;
+      }
+}
