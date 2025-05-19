@@ -1,0 +1,152 @@
+.main-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+// informações 
+
+.informacoes{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// Grafico de pizza
+
+.grafico-container{
+    height: 500px;
+    width: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.summary-container {
+    width: 50%;
+    background-color: var(--color-background);
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.summary-container h3 {
+    font-size: 1.5rem;
+    color: var(--color-primary);
+}
+
+.summary-container p {
+    font-size: 1rem;
+    color: var(--color-text-secondary);
+}
+
+/* Tabela de produtos */
+
+#product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    overflow-x: auto; /* Permite rolar horizontalmente se necessário */
+    display: block; /* Necessário para rolar a tabela horizontalmente */
+    align-items: center;
+    justify-items: center;
+}
+
+#product-table th, #product-table td {
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+#product-table th {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+#product-table tbody tr:nth-child(even) {
+    background-color: var(--color-background);
+}
+
+#product-table button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: var(--color-secondary);
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+#product-table button:hover {
+    background-color: var(--color-primary);
+}
+
+/* Filtros */
+.filters {
+    display: flex;
+    gap: 1rem;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Permite quebrar os filtros em novas linhas se necessário */
+}
+
+.filters input, .filters select, .filters button {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.input-edit {
+  border: none;
+  background: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  width: 100%;
+  text-align: center;
+}
+
+
+//  estilo do form de adcionar produtos
+
+#form-add-produto {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    padding: 1rem;
+    background-color: var(--color-background);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+    align-items: center;
+    justify-content: center;
+}
+
+#form-add-produto input {
+    flex: 1 1 150px; /* largura mínima e flexível */
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+    font-size: 1rem;
+    text-align: center;
+}
+
+#form-add-produto button {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--color-secondary);
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#form-add-produto button:hover {
+    background-color: var(--color-primary);
+}
+
